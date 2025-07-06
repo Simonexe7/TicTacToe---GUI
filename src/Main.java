@@ -1,6 +1,8 @@
+import game.Game;
+
 public class Main {
     public static void main(String[] args) {
-        TicTacToe game = new TicTacToe();
-        game.startGame();
+        Game game = new Game();
+        game.start();
     }
 }
