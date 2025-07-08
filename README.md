@@ -32,10 +32,8 @@ Pilih tingkat kesulitan (easy/medium/hard): medium
 -------------
 Skor: Pemain X = 0 | Komputer O = 0
 Pemain X, Masukkan baris dan kolom [0-2]: 
-Baris:
-0
-Kolom: 
-0
+Baris: 0
+Kolom: 0
 
 -------------
 | X |   | X |
@@ -78,11 +76,11 @@ Terimakasih sudah bermain!
 1️⃣ Clone repository atau download file `.java`.  
 2️⃣ Compile:
 ```bash
-javac javac -d out src/game/Board.java src/game/Computer.java src/game/Game.java src/game/Score.java src/Main.java
+javac -d out src/game/Board.java src/game/Computer.java src/game/Game.java src/game/Score.java src/Main.java
 ```
 3️⃣ Jalankan:
 ```bash
-java -cp out src/Main
+java -cp out Main
 ```
 
 ---
@@ -93,10 +91,8 @@ java -cp out src/Main
 Contoh:
 ```
 Pemain X, Masukkan baris dan kolom [0-2]:
-Baris:
-2
-Kolom: 
-0
+Baris: 2
+Kolom: 0
 ```
 
 📋 Baris & kolom dimulai dari 0:
