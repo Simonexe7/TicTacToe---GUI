@@ -35,9 +35,9 @@ public class Game {
                     System.out.println("Pemain X, Masukkan baris dan kolom [0-2]: ");
                     int row, col;
                     while (true) {
-                        System.out.println("Baris: ");
+                        System.out.print("Baris: ");
                         row = Integer.parseInt(input.nextLine());
-                        System.out.println("Kolom: ");
+                        System.out.print("Kolom: ");
                         col = Integer.parseInt(input.nextLine());
 
                         if(board.isMoveValid(row, col)){
