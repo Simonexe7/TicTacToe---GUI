@@ -17,8 +17,8 @@ Menyediakan papan permainan 3×3 dengan mode melawan komputer dengan beberapa ti
 ---
 
 ## 📸 Screenshot
-![screenshot](docs/pic1.png)
-![screenshot](docs/pic2.png)
+![screenshot](docs/pic1.PNG)
+![screenshot](docs/pic2.PNG)
 
 *(tambahkan screenshot ke folder `docs/` dengan nama `screenshot.png`)*
 
