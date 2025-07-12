@@ -1,8 +1,9 @@
-import game.Game;
+import javax.swing.SwingUtilities;
+
+import game.GUI.Frame;
 
 public class Main {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.start();
+        SwingUtilities.invokeLater(Frame::new);
     }
 }

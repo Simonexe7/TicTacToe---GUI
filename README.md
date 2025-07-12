@@ -1,155 +1,80 @@
-# 🕹️ Tic Tac Toe — Java Console Edition
 
-> Tic Tac Toe (a.k.a. X & O) seru untuk dimainkan di terminal!  
-> Dibuat dengan bahasa **Java**, berjalan di console, dengan AI komputer sederhana hingga cerdas (Minimax).  
-> 🧠 Belajar algoritma + seru-seruan!
+# 🎮 Tic Tac Toe GUI - Java Swing
 
----
-
-## 🎨 Screenshot
-
-### Papan permainan:
-```
--------------
-|   |   |   |
--------------
-|   |   |   |
--------------
-|   |   |   |
--------------
-```
-
-### Saat bermain:
-```
-Pilih tingkat kesulitan (easy/medium/hard): medium
-
--------------
-| X |   |   |
--------------
-|   | O |   |
--------------
-|   |   |   |
--------------
-Skor: Pemain X = 0 | Komputer O = 0
-Pemain X, Masukkan baris dan kolom [0-2]: 
-Baris: 0
-Kolom: 0
-
--------------
-| X |   | X |
--------------
-|   | O |   |
--------------
-|   |   | O |
--------------
-Komputer menang!
-===== Skor saat ini ======
-Pemain X: 0
-Komputer O: 1
- Restart Game? [y/n]: n
-Terimakasih sudah bermain!
-```
+Sebuah game Tic Tac Toe (X/O) dengan GUI berbasis Java Swing.  
+Menyediakan papan permainan 3×3 dengan mode melawan komputer dengan beberapa tingkat kesulitan, serta tampilan modern dengan skor yang selalu terupdate.
 
 ---
 
 ## ✨ Fitur
+- ✅ Papan Tic Tac Toe 3×3 dengan tampilan bersih
+- ✅ Pemain vs Komputer
+- ✅ Pilihan tingkat kesulitan: Easy / Normal / Hard
+- ✅ Skor pemain & komputer ditampilkan & terupdate otomatis
+- ✅ Restart game kapan saja
+- ✅ Desain tombol modern & (opsional) rounded corner
 
-✅ Papan 3×3 yang tampil jelas di terminal  
-✅ Pemain (X) vs Komputer (O)  
-✅ 3 tingkat kesulitan:  
-🎲 **Easy** — komputer random  
-🛡️ **Medium** — komputer bisa block & win  
-♟️ **Hard** — komputer optimal dengan **Minimax**  
-✅ Deteksi menang & seri otomatis  
-✅ Validasi input & pesan error yang ramah  
-✅ Bisa restart game setelah selesai
+---
+
+## 📸 Screenshot
+![screenshot](docs/pic1.png)
+![screenshot](docs/pic2.png)
+
+*(tambahkan screenshot ke folder `docs/` dengan nama `screenshot.png`)*
 
 ---
 
 ## 🚀 Cara Menjalankan
+### Persyaratan:
+- Java JDK 8+  
+- IDE atau editor favorit (misalnya: IntelliJ IDEA, NetBeans, VSCode)
 
-### 📋 Prasyarat
-- **Java JDK 8+** sudah terinstal
-- Terminal / Command Prompt
+### Jalankan dari IDE:
+1️⃣ Clone repo ini atau unduh ZIP  
+2️⃣ Buka folder project di IDE  
+3️⃣ Jalankan file src/Main.java
 
-### 🔧 Langkah:
-1️⃣ Clone repository atau download file `.java`.  
-2️⃣ Compile:
+### Jalankan dari terminal:
 ```bash
-javac -d out src/game/Board.java src/game/Computer.java src/game/Game.java src/game/Score.java src/Main.java
-```
-3️⃣ Jalankan:
-```bash
+javac -d out src/game/GUI/*.java src/game/*.java src/Main.java
 java -cp out Main
 ```
 
 ---
 
-## 🕹️ Cara Bermain
-
-🎯 Saat giliranmu (X), ketikkan **baris & kolom** yang ingin diisi (angka 0–2).  
-Contoh:
+## 🛠️ Struktur Folder
 ```
-Pemain X, Masukkan baris dan kolom [0-2]:
-Baris: 2
-Kolom: 0
+src/
+├── game/
+    ├── Game.java
+    ├── Computer.java
+    └── GUI/
+        ├── Board.java
+        └── Frame.java
+└── Main.java
+docs/
+└── screenshot.png
+.gitignore
+README.md
 ```
 
-📋 Baris & kolom dimulai dari 0:
-```
-(0,0) (0,1) (0,2)
-(1,0) (1,1) (1,2)
-(2,0) (2,1) (2,2)
-```
+---
 
-🧠 Setelah pemain jalan, komputer otomatis memilih langkahnya.
-Game berakhir jika salah satu menang atau papan penuh.
+## 🎨 Teknologi
+- Java 8+
+- Swing (JButton, JPanel, JFrame, JOptionPane, dll)
 
 ---
 
-## 🧠 Tentang AI Komputer
-
-| Difficulty | Strategi |
-|------------|-----------|
-| **Easy**   | Random |
-| **Medium** | Mencoba menang & block |
-| **Hard**   | Selalu optimal dengan Minimax |
+## 📜 Lisensi
+MIT License — bebas digunakan & dikembangkan.
 
 ---
 
-## 👨‍💻 Kontribusi
-
-💡 Kamu bisa bantu mengembangkan project ini:  
-✅ Tambahkan GUI (Swing / JavaFX)  
-✅ Tambahkan skor total & leaderboard  
-✅ Tambahkan animasi / suara  
-✅ Tingkatkan AI lebih cepat dengan alpha-beta pruning
+## ❤️ Kontribusi
+Jika ingin berkontribusi (misalnya: menambahkan animasi, AI lebih pintar, atau mode multiplayer), jangan ragu untuk kirim PR!
 
 ---
 
-### 📥 Cara Kontribusi
-1️⃣ Fork repository ini  
-2️⃣ Buat branch baru (`git checkout -b fitur-anda`)  
-3️⃣ Lakukan perubahan & commit (`git commit -m 'Tambah fitur …'`)  
-4️⃣ Push ke branch (`git push origin fitur-anda`)  
-5️⃣ Buat Pull Request (PR) ke repo utama
-
----
-
-## 📜 License
-
-MIT License — bebas digunakan, diubah & dikembangkan.  
-Kalau pakai / modifikasi, kasih bintang & mention nama pembuat akan sangat diapresiasi. 🌟
-
----
-
-## 🙏 Credit
-
-Dibuat dengan ❤️ oleh Muhammad Farhan  
-Terinspirasi dari permainan klasik Tic Tac Toe yang tak pernah membosankan.  
-Belajar sambil bermain & berbagi ilmu!
-
----
-
-![Java](https://img.shields.io/badge/Made%20with-Java-blue?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+### Author
+🧑‍💻 Dibuat dengan semangat belajar Java oleh Muhammad Farhan.
